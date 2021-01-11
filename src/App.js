@@ -1,4 +1,6 @@
 import "./App.css";
+import { Contact } from "./components/Contact";
+import { Footer } from "./components/Footer";
 import { Menu } from "./components/Menu";
 import { Project } from "./components/Project";
 import { Info } from "./components/sections/about/Info";
@@ -13,6 +15,8 @@ function App() {
       <Info />
       <InfoB />
       <Project />
+      <Contact />
+      <Footer />
     </div>
   );
 }
