@@ -2,7 +2,7 @@ import React from "react";
 import { useState } from "react";
 import "../App.css";
 
-export const Menu = () => {
+export const Menu = (sty) => {
   const [checkedVal, setCheckedValue] = useState(true);
 
   const handleChange = (e) => {
@@ -12,6 +12,8 @@ export const Menu = () => {
   const handleClick = (e) => {
     setCheckedValue(false);
   };
+
+  // sty(checkedVal);
 
   return (
     <div className="menu-wrap">

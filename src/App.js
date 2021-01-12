@@ -8,9 +8,13 @@ import { InfoB } from "./components/sections/about/InfoB";
 import { Showcase } from "./components/Showcase";
 
 function App() {
+  // const styV = (bool) => {
+  //   console.log(bool);
+  // };
+
   return (
     <div>
-      <Menu />
+      <Menu  />
       <Showcase />
       <Info />
       <InfoB />
