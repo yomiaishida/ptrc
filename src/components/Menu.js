@@ -1,34 +1,50 @@
 import React from "react";
+import { useState } from "react";
 import "../App.css";
 
 export const Menu = () => {
+  const [checkedVal, setCheckedValue] = useState(true);
+
+  const handleChange = (e) => {
+    setCheckedValue(!checkedVal);
+  };
+
+  const handleClick = (e) => {
+    setCheckedValue(false);
+  };
+
   return (
     <div className="menu-wrap">
-      <input type="checkbox" className="toggler" />
+      <input
+        type="checkbox"
+        checked={checkedVal}
+        onChange={handleChange}
+        className="toggler"
+      />
       <div className="hamburger">
         <div></div>
       </div>
       <div className="menu" id="menu">
-        <div className="overlay">
+        <div className="overlay" onClick={handleClick}>
           <div>
             <ul>
               <li>
-                <a className="li" href="#showcase">
+                <a className="li" onClick={handleClick} href="#showcase">
                   Home
                 </a>
               </li>
               <li>
-                <a className="li" href="#about-a">
+                <a className="li" onClick={handleClick} href="#about-a">
                   About
                 </a>
               </li>
               <li>
-                <a className="li" href="#projects">
+                <a className="li" onClick={handleClick} href="#projects">
                   Projects
                 </a>
               </li>
               <li>
-                <a className="li" href="#contact">
+                <a className="li" onClick={handleClick} href="#contact">
                   Contact
                 </a>
               </li>
