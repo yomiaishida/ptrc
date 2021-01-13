@@ -65,11 +65,19 @@ export const GlobalContext = createContext(initialState);
 export const GlobalProvider = ({ children }) => {
   const [state, dispatch] = useReducer(AppReducer, initialState);
 
+  // Actions
+  function toggleCheckBox() {
+    dispatch({
+      type: "TOGGLE_CHECK",
+    });
+  }
+
   return (
     <GlobalContext.Provider
       value={{
         projectDetails: state.projectDetails,
         secondStateVal: state.secondStateVal,
+        toggleCheckBox,
       }}
     >
       {children}

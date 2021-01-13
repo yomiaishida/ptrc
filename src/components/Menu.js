@@ -1,25 +1,24 @@
 import React from "react";
-import { useState } from "react";
+import { useContext } from "react";
+import { GlobalContext } from "../context/GlobalState";
 import "../App.css";
 
-export const Menu = (sty) => {
-  const [checkedVal, setCheckedValue] = useState(true);
+export const Menu = () => {
+  // const [checkedVal, setCheckedValue] = useState(true);
+
+  const { secondStateVal, toggleCheckBox } = useContext(GlobalContext);
 
   const handleChange = (e) => {
-    setCheckedValue(!checkedVal);
+    return toggleCheckBox();
   };
 
-  const handleClick = (e) => {
-    setCheckedValue(false);
-  };
-
-  // sty(checkedVal);
+  const handleClick = (e) => toggleCheckBox();
 
   return (
     <div className="menu-wrap">
       <input
         type="checkbox"
-        checked={checkedVal}
+        checked={secondStateVal}
         onChange={handleChange}
         className="toggler"
       />
