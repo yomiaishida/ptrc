@@ -6,6 +6,7 @@ import { Project } from "./components/Project";
 import { Info } from "./components/sections/about/Info";
 import { InfoB } from "./components/sections/about/InfoB";
 import { Showcase } from "./components/Showcase";
+import { GlobalProvider } from "./context/GlobalState";
 
 function App() {
   // const styV = (bool) => {
@@ -13,15 +14,15 @@ function App() {
   // };
 
   return (
-    <div>
-      <Menu  />
+    <GlobalProvider>
+      <Menu />
       <Showcase />
       <Info />
       <InfoB />
       <Project />
       <Contact />
       <Footer />
-    </div>
+    </GlobalProvider>
   );
 }
 
