@@ -18,6 +18,14 @@ const initialState = {
     },
     {
       id: 2,
+      img: "https://unsplash.com/s/photos/technology/",
+      projectLink: "https://yadevcon.herokuapp.com/",
+      projectTitle: "Developer Connector",
+      description:
+        "Built with the MERN Stack. A powerful web app for connecting developers",
+    },
+    {
+      id: 3,
       img: loan,
       projectLink: "https://yomiaishida.github.io/loan-calculator/",
       projectTitle: "Loan Calculator",
@@ -25,7 +33,7 @@ const initialState = {
         "A JavaScript app that helps calculate loan interest over a given period",
     },
     {
-      id: 3,
+      id: 4,
       img: calorie,
       projectLink: "https://yomiaishida.github.io/Calorie-Tacker",
       projectTitle: "Tracalorie",
@@ -33,21 +41,21 @@ const initialState = {
         "Tracalorie helps in monitoring daily calorie intake and it's especially useful for those who are careful about their calorie intake daily",
     },
     {
-      id: 4,
+      id: 5,
       img: check,
       projectLink: "https://yomiaishida.github.io/Task-List-App",
       projectTitle: "TODO APP",
       description: "Plan out your daily functions with this todo app",
     },
     {
-      id: 5,
+      id: 6,
       img: fingers,
       projectLink: "https://yomiaishida.github.io/RockPaper",
       projectTitle: "GAME",
       description: "Play a game of Rock, Paper, Scissors while you're here",
     },
     {
-      id: 6,
+      id: 7,
       img: "",
       projectLink:
         "https://yomiaishida.github.io/Blogen-boostrap-app/index.html#",
@@ -55,7 +63,7 @@ const initialState = {
       description: "Design Concept",
     },
   ],
-  secondStateVal: false,
+  secondStateVal: true,
 };
 
 // Create context
