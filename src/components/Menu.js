@@ -12,7 +12,9 @@ export const Menu = () => {
     return toggleCheckBox();
   };
 
-  const handleClick = (e) => toggleCheckBox();
+  const handleClick = (e) => {
+    toggleCheckBox();
+  };
 
   return (
     <div className="menu-wrap">
@@ -28,7 +30,7 @@ export const Menu = () => {
       <div className="menu" id="menu">
         <div className="overlay" onClick={handleClick}>
           <div>
-            <ul>
+            <ul onClick={handleClick}>
               <li>
                 <a className="li" onClick={handleClick} href="#showcase">
                   Home
