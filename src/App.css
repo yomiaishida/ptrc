@@ -163,6 +163,10 @@ body {
   color: var(--secondary-color);
 }
 
+.li {
+  cursor: pointer;
+}
+
 /* Utitlity classes */
 .lead {
   font-size: 1.3rem;
@@ -263,6 +267,7 @@ body {
   transition: opacity 1s ease-in-out;
   text-decoration: none;
   border-radius: 5px;
+  cursor: pointer;
 }
 
 .btn:hover {
@@ -611,6 +616,9 @@ h3 a {
       "aw1"
       "aw2"
       "aw3";
+  }
+  #about-b .section-title {
+    font-size: 1.5rem;
   }
   #about-c {
     display: none;

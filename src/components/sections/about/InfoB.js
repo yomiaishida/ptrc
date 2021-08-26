@@ -4,7 +4,9 @@ export const InfoB = () => {
   return (
     <section id="about-b" className="bg-dark py-3">
       <div className="container border">
-        <h2 className="section-title">Technical Skills/Languages/Frameworks</h2>
+        <h2 className="section-title">
+          Technical Skills / Languages / Frameworks
+        </h2>
 
         <div className="bottom-line"></div>
         <div className="stacks">
