@@ -63,7 +63,7 @@ const initialState = {
       description: "Design Concept",
     },
   ],
-  secondStateVal: true,
+  toggleValue: true,
 };
 
 // Create context
@@ -84,7 +84,7 @@ export const GlobalProvider = ({ children }) => {
     <GlobalContext.Provider
       value={{
         projectDetails: state.projectDetails,
-        secondStateVal: state.secondStateVal,
+        toggleValue: state.toggleValue,
         toggleCheckBox,
       }}
     >

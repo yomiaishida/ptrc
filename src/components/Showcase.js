@@ -1,4 +1,5 @@
 import React from "react";
+import { Link, animateScroll as scroll } from "react-scroll";
 
 export const Showcase = () => {
   return (
@@ -9,9 +10,16 @@ export const Showcase = () => {
           I'm Abayomi, a passionate self-taught developer, and a tech
           enthusiast.
         </p>
-        <a href="#about-a" className="btn">
+        <Link
+          to="about-a"
+          spy={true}
+          smooth={true}
+          // offset={-70}
+          duration={500}
+          className="btn"
+        >
           Read More
-        </a>
+        </Link>
       </div>
     </header>
   );

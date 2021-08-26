@@ -3,7 +3,7 @@ export default (state, action) => {
     case "TOGGLE_CHECK":
       return {
         ...state,
-        secondStateVal: !state.secondStateVal,
+        toggleValue: !state.toggleValue,
       };
     default:
       return state;

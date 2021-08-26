@@ -2,11 +2,10 @@ import React from "react";
 import { useContext } from "react";
 import { GlobalContext } from "../context/GlobalState";
 import "../App.css";
+import { Link, animateScroll as scroll } from "react-scroll";
 
 export const Menu = () => {
-  // const [checkedVal, setCheckedValue] = useState(true);
-
-  const { secondStateVal, toggleCheckBox } = useContext(GlobalContext);
+  const { toggleValue, toggleCheckBox } = useContext(GlobalContext);
 
   const handleChange = (e) => {
     return toggleCheckBox();
@@ -20,7 +19,7 @@ export const Menu = () => {
     <div className="menu-wrap">
       <input
         type="checkbox"
-        checked={secondStateVal}
+        checked={toggleValue}
         onChange={handleChange}
         className="toggler"
       />
@@ -30,26 +29,58 @@ export const Menu = () => {
       <div className="menu" id="menu">
         <div className="overlay" onClick={handleClick}>
           <div>
-            <ul onClick={handleClick}>
+            <ul>
               <li>
-                <a className="li" onClick={handleClick} href="#showcase">
+                <Link
+                  className="li"
+                  onClick={handleClick}
+                  to="showcase"
+                  spy={true}
+                  smooth={true}
+                  // offset={-70}
+                  duration={500}
+                >
                   Home
-                </a>
+                </Link>
               </li>
               <li>
-                <a className="li" onClick={handleClick} href="#about-a">
+                <Link
+                  className="li"
+                  onClick={handleClick}
+                  to="about-a"
+                  spy={true}
+                  smooth={true}
+                  // offset={-70}
+                  duration={500}
+                >
                   About
-                </a>
+                </Link>
               </li>
               <li>
-                <a className="li" onClick={handleClick} href="#projects">
+                <Link
+                  className="li"
+                  onClick={handleClick}
+                  to="projects"
+                  spy={true}
+                  smooth={true}
+                  // offset={120}
+                  duration={500}
+                >
                   Projects
-                </a>
+                </Link>
               </li>
               <li>
-                <a className="li" onClick={handleClick} href="#contact">
+                <Link
+                  className="li"
+                  onClick={handleClick}
+                  to="contact"
+                  spy={true}
+                  smooth={true}
+                  // offset={-70}
+                  duration={500}
+                >
                   Contact
-                </a>
+                </Link>
               </li>
             </ul>
           </div>

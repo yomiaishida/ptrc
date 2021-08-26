@@ -2,10 +2,10 @@ import React, { useContext } from "react";
 import { GlobalContext } from "../context/GlobalState";
 
 export const ProjectItem = ({ project }) => {
-  const { secondStateVal } = useContext(GlobalContext);
+  const { toggleValue } = useContext(GlobalContext);
   return (
     <>
-      <div style={{ zIndex: secondStateVal ? "-1" : "1" }} className="item">
+      <div style={{ zIndex: toggleValue ? "-1" : "1" }} className="item">
         <div className="item-image">
           <img src={project.img} alt="" />
         </div>
