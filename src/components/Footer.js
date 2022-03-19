@@ -4,7 +4,7 @@ export const Footer = () => {
   return (
     <footer id="main-footer">
       <div className="footer-content">
-        <p>Copyright &copy: 2021. All Rights Reserved</p>
+        <p>Copyright &copy; 2022. All Rights Reserved</p>
         <div className="social">
           <a
             href="http://twitter.com/yomi_aishida"
@@ -13,22 +13,16 @@ export const Footer = () => {
           >
             <i className="fab fa-twitter"></i>
           </a>
+          
           <a
-            href="http://facebook.com/aishida.abayomi"
+            href="https://github.com/yomiaishida"
             target="_blank"
             rel="noreferrer"
           >
-            <i className="fab fa-facebook"></i>
+            <i className="fab fa-github"></i>
           </a>
           <a
-            href="http://instagram.com/aishida_yomi/"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <i className="fab fa-instagram"></i>
-          </a>
-          <a
-            href="http://https://www.linkedin.com/in/abayomi-aishida-371810197/"
+            href="https://www.linkedin.com/in/abayomiaishida/"
             target="_blank"
             rel="noreferrer"
           >
