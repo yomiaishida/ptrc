@@ -40,7 +40,7 @@ const initialState = {
       img: smoothies,
       projectLink: "https://insect-bulgarian.cyclic-app.com/login/",
       projectTitle: "Smoothy",
-      description: "Built Node Express and ejs for static site generation",
+      description: "Built with NodeJs, Express and ejs for static site generation",
     },
     {
       id: 5,
