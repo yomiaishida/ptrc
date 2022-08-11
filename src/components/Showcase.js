@@ -6,10 +6,7 @@ export const Showcase = () => {
     <header id="showcase">
       <div className="container showcase-container">
         <h1>Welcome</h1>
-        <p>
-          I'm Abayomi, a passionate self-taught developer; and a tech
-          enthusiast.
-        </p>
+        <p>I'm Abayomi, an experienced and passionate Front-end developer.</p>
         <Link
           to="about-a"
           spy={true}

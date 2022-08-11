@@ -10,9 +10,12 @@ export const InfoB = () => {
 
         <div className="bottom-line"></div>
         <div className="stacks">
-          <span>HTML</span> <span>CSS</span> <span>JavaScript</span>
+          <span>HTML</span> <span>CSS</span>
+          <span>SASS</span> <span>Tailwind CSS</span>
+          <span>JavaScript</span>
           <span>ReactJS</span> <span>Redux</span> <span>Bootstrap</span>
-          <span>MongoDb</span> <span>Express</span> <span>Node</span>
+          <span>MongoDb</span> <span>Express</span> <span>GraphQL</span>
+          <span>Node</span>
           <span>Firebase</span>
         </div>
       </div>

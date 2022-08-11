@@ -23,24 +23,29 @@ const initialState = {
     {
       id: 2,
       img: ecommerce2,
-      projectLink: "https://iproshop.herokuapp.com/",
+      projectLink: "https://gardjet.herokuapp.com/",
       projectTitle: "E-Shop",
       description: "Ecommerce app built with MERN stack",
     },
     {
       id: 3,
       img: social,
-      projectLink: "https://yadevcon.herokuapp.com/",
-      projectTitle: "Developer Connector",
-      description:
-        "Built with the MERN Stack. A powerful web app for connecting developers",
+      projectLink: "https://house-market-gray.vercel.app/",
+      projectTitle: "Home Listings",
+      description: (
+        <div>
+          <p> Built with React and firebase 9</p>
+          <p> Data storage on Google Cloud Firestore</p>
+        </div>
+      ),
     },
     {
       id: 4,
       img: smoothies,
       projectLink: "https://insect-bulgarian.cyclic-app.com/login/",
       projectTitle: "Smoothy",
-      description: "Built with NodeJs, Express and ejs for static site generation",
+      description:
+        "Built with NodeJs, Express and ejs for static site generation",
     },
     {
       id: 5,
