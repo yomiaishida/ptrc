@@ -32,12 +32,8 @@ const initialState = {
       img: social,
       projectLink: "https://house-market-gray.vercel.app/",
       projectTitle: "Home Listings",
-      description: (
-        <div>
-          <p> Built with React and firebase 9</p>
-          <p> Data storage on Google Cloud Firestore</p>
-        </div>
-      ),
+      description:
+        " Built with React and firebase 9. Data storage on Google Cloud Firestore",
     },
     {
       id: 4,
