@@ -4,7 +4,7 @@ export const Footer = () => {
   return (
     <footer id="main-footer">
       <div className="footer-content">
-        <p>Copyright &copy; 2022. All Rights Reserved</p>
+        <p>Copyright &copy; 2024. All Rights Reserved</p>
         <div className="social">
           <a
             href="http://twitter.com/yomi_aishida"
@@ -13,7 +13,7 @@ export const Footer = () => {
           >
             <i className="fab fa-twitter"></i>
           </a>
-          
+
           <a
             href="https://github.com/yomiaishida"
             target="_blank"

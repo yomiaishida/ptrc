@@ -2,6 +2,7 @@ import React from "react";
 import { useContext } from "react";
 import { GlobalContext } from "../context/GlobalState";
 import "../App.css";
+// eslint-disable-next-line no-unused-vars
 import { Link, animateScroll as scroll } from "react-scroll";
 
 export const Menu = () => {
