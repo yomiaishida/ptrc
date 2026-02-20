@@ -1,14 +1,9 @@
 import React, { createContext, useReducer } from "react";
 import AppReducer from "./AppReducer";
 import contact from "../components/img/contact.png";
-import calorie from "../components/img/calorieTracker.jpg";
-import loan from "../components/img/loanCalc.jpg";
-import check from "../components/img/check-list.png";
-import fingers from "../components/img/fingers.png";
 import social from "../components/img/social.jpg";
 import ecommerce2 from "../components/img/ecommerce2.jpg";
 import smoothies from "../components/img/smoothies.jpg";
-import bootstrap from "../components/img/bootstrap.jpg";
 
 // Initial state
 const initialState = {
@@ -17,69 +12,69 @@ const initialState = {
       id: 1,
       img: contact,
       projectLink: "https://yourcontactmanager.netlify.app/",
+      githubLink: "https://github.com/yomiaishida/contact-manager",
       projectTitle: "Contact Manager",
-      description: "An app that helps keep your contacts",
+      role: "Full-Stack Engineer",
+      description:
+        "Full-stack contact management system with CRUD operations and persistent state across authenticated sessions.",
+      engineeringFocus: [
+        "JWT-based authentication",
+        "RESTful API integration",
+        "Persistent client-side state",
+        "CRUD operations",
+      ],
+      stack: ["React", "Node.js", "Express", "MongoDB"],
     },
     {
       id: 2,
       img: ecommerce2,
       projectLink: "https://gardjet.herokuapp.com/",
+      githubLink: "https://github.com/yomiaishida/GardJet",
       projectTitle: "E-Shop",
-      description: "Ecommerce app built with MERN stack",
+      role: "Full-Stack Engineer",
+      description:
+        "End-to-end ecommerce platform built on the MERN stack with cart synchronization, product filtering, and authenticated checkout flow.",
+      engineeringFocus: [
+        "Cart state synchronization",
+        "Product filtering & search",
+        "Authenticated checkout flow",
+        "RESTful API design",
+      ],
+      stack: ["React", "Node.js", "Express", "MongoDB"],
     },
     {
       id: 3,
       img: social,
       projectLink: "https://house-market-gray.vercel.app/",
+      githubLink: "https://github.com/yomiaishida/House-market",
       projectTitle: "Home Listings",
+      role: "Frontend Engineer",
       description:
-        " Built with React and firebase 9. Data storage on Google Cloud Firestore",
+        "Real estate listing platform with real-time data sync via Google Cloud Firestore and role-based access for buyers and agents.",
+      engineeringFocus: [
+        "Real-time Firestore data sync",
+        "Role-based access control",
+        "Firebase 9 authentication",
+        "Responsive UI architecture",
+      ],
+      stack: ["React", "Firebase 9", "Firestore", "Tailwind CSS"],
     },
     {
       id: 4,
       img: smoothies,
       projectLink: "https://insect-bulgarian.cyclic-app.com/login/",
+      githubLink: "https://github.com/yomiaishida/Smoothie-nodeJwt",
       projectTitle: "Smoothy",
+      role: "Backend-Integrated Frontend",
       description:
-        "Built with NodeJs, Express and ejs for static site generation",
-    },
-    {
-      id: 5,
-      img: loan,
-      projectLink: "https://yomiaishida.github.io/loan-calculator/",
-      projectTitle: "Loan Calculator",
-      description:
-        "A JavaScript app that helps calculate loan interest over a given period",
-    },
-    {
-      id: 6,
-      img: calorie,
-      projectLink: "https://yomiaishida.github.io/Calorie-Tacker",
-      projectTitle: "Tracalorie",
-      description:
-        "Tracalorie helps in monitoring daily calorie intake and it's especially useful for those who are careful about their calorie intake daily",
-    },
-    {
-      id: 7,
-      img: check,
-      projectLink: "https://yomiaishida.github.io/Task-List-App",
-      projectTitle: "TODO APP",
-      description: "Plan out your daily functions with this todo app",
-    },
-    {
-      id: 8,
-      img: fingers,
-      projectLink: "https://yomiaishida.github.io/RockPaper",
-      projectTitle: "GAME",
-      description: "Play a game of Rock, Paper, Scissors while you're here",
-    },
-    {
-      id: 9,
-      img: bootstrap,
-      projectLink:
-        "https://yomiaishida.github.io/Blogen-boostrap-app/index.html#",
-      projectTitle: "Bootstrap UI",
-      description: "Design Concept",
+        "Server-rendered web application with session-based authentication, JWT token management, and dynamic content templating.",
+      engineeringFocus: [
+        "Session-based authentication",
+        "JWT token management",
+        "Server-side rendering with EJS",
+        "RESTful route architecture",
+      ],
+      stack: ["Node.js", "Express", "EJS", "MongoDB"],
     },
   ],
   toggleValue: true,

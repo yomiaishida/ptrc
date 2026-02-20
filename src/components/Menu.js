@@ -38,7 +38,6 @@ export const Menu = () => {
                   to="showcase"
                   spy={true}
                   smooth={true}
-                  // offset={-70}
                   duration={500}
                 >
                   Home
@@ -48,10 +47,33 @@ export const Menu = () => {
                 <Link
                   className="li"
                   onClick={handleClick}
+                  to="work"
+                  spy={true}
+                  smooth={true}
+                  duration={500}
+                >
+                  Work
+                </Link>
+              </li>
+              <li>
+                <Link
+                  className="li"
+                  onClick={handleClick}
+                  to="experience"
+                  spy={true}
+                  smooth={true}
+                  duration={500}
+                >
+                  Experience
+                </Link>
+              </li>
+              <li>
+                <Link
+                  className="li"
+                  onClick={handleClick}
                   to="about-a"
                   spy={true}
                   smooth={true}
-                  // offset={-70}
                   duration={500}
                 >
                   About
@@ -61,23 +83,9 @@ export const Menu = () => {
                 <Link
                   className="li"
                   onClick={handleClick}
-                  to="projects"
-                  spy={true}
-                  smooth={true}
-                  // offset={120}
-                  duration={500}
-                >
-                  Projects
-                </Link>
-              </li>
-              <li>
-                <Link
-                  className="li"
-                  onClick={handleClick}
                   to="contact"
                   spy={true}
                   smooth={true}
-                  // offset={-70}
                   duration={500}
                 >
                   Contact
