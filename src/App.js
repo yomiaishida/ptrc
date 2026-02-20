@@ -9,6 +9,7 @@ import { Experience } from "./components/Experience";
 import { Info } from "./components/sections/about/Info";
 import { InfoB } from "./components/sections/about/InfoB";
 import { Showcase } from "./components/Showcase";
+import { ScrollToTop } from "./components/ScrollToTop";
 import { GlobalProvider } from "./context/GlobalState";
 
 function App() {
@@ -24,6 +25,7 @@ function App() {
       <Info />
       <Contact />
       <Footer />
+      <ScrollToTop />
     </GlobalProvider>
   );
 }
