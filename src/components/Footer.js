@@ -4,7 +4,7 @@ export const Footer = () => {
   return (
     <footer id="main-footer">
       <div className="footer-content">
-        <p>Copyright &copy; 2024. All Rights Reserved</p>
+        <p>Copyright &copy; {new Date().getFullYear()} Abayomi Aishida. All Rights Reserved</p>
         <div className="social">
           <a
             href="http://twitter.com/yomi_aishida"

@@ -7,7 +7,7 @@ export const Project = () => {
 
   return (
     <section className="py-3 project" id="work">
-      <div className="border">
+      <div className="container">
         <h2 className="section-title">Selected Work</h2>
         <div className="bottom-line"></div>
         <p className="lead">Production applications and engineering problems solved.</p>

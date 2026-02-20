@@ -8,10 +8,8 @@ export const Info = () => {
         <div className="bottom-line"></div>
         <div className="about-bio">
           <p className="about-text">
-            Frontend Engineer with experience building production-ready
-            applications since 2018. I enjoy solving complex UI challenges and
-            collaborating with distributed product teams to deliver reliable,
-            scalable interfaces.
+            Frontend Engineer experienced in building production-ready web
+            applications and scalable user interfaces for modern products.
           </p>
           <p className="about-footnote">
             Past participant: NaijaHacks hackathon, BuildforSDGs (Facebook &times; Andela).{" "}
